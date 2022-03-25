@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/mainStyle.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Day 2</h1>
-    <p>25.03.2022</p>
-    <input id="userInput" type="text">
-    <button onclick="checkPalindrome()">Check</button>
-    <script src="palindromeChecker.js"></script>
-    <h1 id="palindromeStatus"></h1>
+
+    <div class="topBar">
+        <a class="return" href="/index.html">&laquo; Return</a>
+        <h1>Day 2</h1>
+        <p>25.03.2022</p>
+    </div>
+
+    <div class="contentBox">
+        <h2>Palindrome Checker</h2>
+        <input id="userInput" type="text">
+        <button class="inputButton" onclick="checkPalindrome()"> <span> Check </span> </button>
+        <script src="palindromeChecker.js"></script>
+        <h1 id="palindromeStatus">-</h1>
+    </div>
+
 </body>
 </html>

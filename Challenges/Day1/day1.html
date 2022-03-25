@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/mainStyle.css">
 </head>
 <body>
 
-    <h1>Day 1</h1>
-    <p>24.03.2022</p>
-
-    <input 
+    <div class="topBar">
+        <a class="return" href="/index.html">&laquo; Return</a>
+        <h1>Day 1</h1>
+        <p>24.03.2022</p>
+    </div>
+    
+    <div class="contentBox">
+        <h2>Smallest Number Challenge</h2>
+        <input 
         id="userInput"
         type="text"
         placeholder="Enter the list of numbers.">
 
-    <button onclick="findSmallestElement()"> 
-        Enter
-    </button>
+        <button class="inputButton" onclick="findSmallestElement()"> 
+            <span> Check </span>
+        </button>
 
-    <p>Smallest number to achieve the smallest absolute sum is:</p>
-    <h1 id="resultTag"></h1>
+        <p>Smallest number to achieve the smallest absolute sum is:</p>
+        <h1 id="resultTag">-</h1>
+    </div>
+
+    
 
     <script src="smallestAbsValSum.js"></script>
 </body>

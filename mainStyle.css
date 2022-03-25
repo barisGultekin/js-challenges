@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Teko', sans-serif;
+}
+
+.topBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.topBar a{
+    text-align: left;
+    position: relative;
+    right: 35%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    color: black;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.topBar a:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+}
+
+.topBar a:active {
+    background-color: #90b0d0;
+    box-shadow: 0 5px #f6f6f6;
+    transform: translateY(4px);
+  }
+
+.topBar p{
+    text-align: right;
+    position: relative;
+    left: 35%;
+}
+
+.inputButton{
+    color: aliceblue;
+    background-color: #54b3d6;
+    border: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 5px 20px;
+    margin-left: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.inputButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+.inputButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.inputButton:hover span {
+    padding-right: 15px;
+  }
+  
+.inputButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.inputButton:active {
+    background-color: #90b0d0;
+    box-shadow: 0 5px #f6f6f6;
+    transform: translateY(4px);
+  }
