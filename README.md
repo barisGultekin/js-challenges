@@ -1,1 +1,1 @@
-# 100days-challenge-js
+# JS Challenges
